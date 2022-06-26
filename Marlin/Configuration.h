@@ -178,7 +178,7 @@
 #else
   #define X_DRIVER_TYPE TMC2208_STANDALONE
   #define Y_DRIVER_TYPE TMC2208_STANDALONE
-  #define Z_DRIVER_TYPE A4988
+  #define Z_DRIVER_TYPE TMC2208_STANDALONE
 #endif
 //#define X2_DRIVER_TYPE A4988
 //#define Y2_DRIVER_TYPE A4988
@@ -194,7 +194,7 @@
 #if ENABLED(SPRO_TMC2209)
   #define E0_DRIVER_TYPE TMC2209_STANDALONE
 #else
-  #define E0_DRIVER_TYPE A4988
+  #define E0_DRIVER_TYPE TMC2208_STANDALONE
 #endif
 //#define E1_DRIVER_TYPE A4988
 //#define E2_DRIVER_TYPE A4988
@@ -1454,11 +1454,7 @@
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
 #define INVERT_X_DIR true
 #define INVERT_Y_DIR true
-#if ENABLED(SPRO_TMC2209)
-  #define INVERT_Z_DIR true
-#else
-  #define INVERT_Z_DIR false
-#endif
+#define INVERT_Z_DIR true
 //#define INVERT_I_DIR false
 //#define INVERT_J_DIR false
 //#define INVERT_K_DIR false

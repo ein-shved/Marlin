@@ -23,7 +23,7 @@
 
 #define CONFIG_EXAMPLES_DIR "Two Trees/Sapphire Pro"
 
-//#define SPRO_INVERTED_E // Enable if the extruder runs the wrong way
+#define SPRO_INVERTED_E // Enable if the extruder runs the wrong way
 //#define SPRO_TMC2209 // Enable for the TMC2209 driver version
 #define SPRO_BLTOUCH // Enable if you want to use BLTOUCH
 
@@ -191,11 +191,7 @@
 //#define U_DRIVER_TYPE  A4988
 //#define V_DRIVER_TYPE  A4988
 //#define W_DRIVER_TYPE  A4988
-#if ENABLED(SPRO_TMC2209)
-  #define E0_DRIVER_TYPE TMC2209_STANDALONE
-#else
-  #define E0_DRIVER_TYPE TMC2208_STANDALONE
-#endif
+#define E0_DRIVER_TYPE TMC2209_STANDALONE
 //#define E1_DRIVER_TYPE A4988
 //#define E2_DRIVER_TYPE A4988
 //#define E3_DRIVER_TYPE A4988

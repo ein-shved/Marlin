@@ -15,6 +15,36 @@
 Additional documentation can be found at the [Marlin Home Page](https://marlinfw.org/).
 Please test this firmware and let us know if it misbehaves in any way. Volunteers are standing by!
 
+## Two Trees SPRO
+
+This is personal fork of Marlin to store configuration of own printer - Two
+Trees Sapphire Pro with direct Big Tree Teck Matrix extruder (E3D Hemera clone).
+See commit history for details.
+
+### Specific filament calibrations
+
+### E3Dv6 heatblock
+
+##### PLA FDPlast
+
+Parameter|Value
+---------|-----
+Max mass flow|12.3 mm3/s
+Linear Advance K-Factor|0.0
+Flow|95%
+Temperature|215
+Retraction|0.5mm
+
+###### Flow Measurements
+
+Length|Speed mm/min|Speed mm/s|Perc|Weight|Time
+------|------------|----------|----|------|----
+2000|240|4  |100%|5.9g|500s
+2000|300|5  |125%|5.9g|400s
+2000|312|5.2|130%|5.9g|384.6s
+2000|336|5.6|140%|5.8g|357.1s
+2000|360|6  |150%|5.8g|333.3s
+
 ## Marlin 2.1
 
 Marlin 2.1 continues to support both 32-bit ARM and 8-bit AVR boards while adding support for up to 9 coordinated axes and to up to 8 extruders.

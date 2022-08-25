@@ -34,6 +34,7 @@ Linear Advance K-Factor|0.0
 Flow|95%
 Temperature|215
 Retraction|0.5mm
+Bed Temperature|60/70
 
 ###### Flow Measurements
 
@@ -44,6 +45,32 @@ Length|Speed mm/min|Speed mm/s|Perc|Weight|Time
 2000|312|5.2|130%|5.9g|384.6s
 2000|336|5.6|140%|5.8g|357.1s
 2000|360|6  |150%|5.8g|333.3s
+
+
+##### PetG FDPlast
+
+Parameter|Value
+---------|-----
+Max mass flow|15.12 mm3/s
+Linear Advance K-Factor|0.0
+Retraction|0.85mm
+Flow|100%
+Temperature|230
+Bed Temperature|80/90
+
+###### Flow Measurements
+
+2362 mm3
+
+Length|Speed mm/min|Speed mm/s|Perc|Time|Weight|Flow
+------|------------|----------|----|----|------|----
+1000|240|4  |100%|250.0s|3.00g|9.45
+1000|300|5  |125%|200.0s|2.99g|11.81
+1000|312|5.2|130%|192.3s|2.99g|12.28
+1000|336|5.6|140%|178.6s|2.99g|13.22
+1000|360|6  |150%|166.(6)s|2.98g|14.17
+1000|384|6.4|160%|156.25s|2.97g|15.12
+
 
 ## Marlin 2.1
 

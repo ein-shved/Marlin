@@ -663,13 +663,14 @@
     #define DEFAULT_Kp_LIST {   8.16,   8.16 }
     #define DEFAULT_Ki_LIST {   0.37,   0.37 }
     #define DEFAULT_Kd_LIST {  44.46,  44.46 }
+    #error "Only one hotend supported"
   #else
 //    #define DEFAULT_Kp   8.16
 //    #define DEFAULT_Ki   0.37
 //    #define DEFAULT_Kd  44.46
-    #define DEFAULT_Kp 20.01
-    #define DEFAULT_Ki 1.74
-    #define DEFAULT_Kd 57.63
+    #define DEFAULT_Kp 14.42
+    #define DEFAULT_Ki 2.20
+    #define DEFAULT_Kd 23.64
   #endif
 #endif
 
@@ -1294,7 +1295,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { 63.6, 13.7, -1.2 }
+#define NOZZLE_TO_PROBE_OFFSET { 63.6, 13.7, -1.67 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.

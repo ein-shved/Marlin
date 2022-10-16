@@ -52,7 +52,7 @@ Length|Speed mm/min|Speed mm/s|Perc|Weight|Time
 Parameter|Value
 ---------|-----
 Max mass flow|15.12 mm3/s
-Linear Advance K-Factor|0.0
+Linear Advance K-Factor|0.089
 Retraction|0.85mm
 Flow|100%
 Temperature|230
@@ -70,6 +70,18 @@ Length|Speed mm/min|Speed mm/s|Perc|Time|Weight|Flow
 1000|336|5.6|140%|178.6s|2.99g|13.22
 1000|360|6  |150%|166.(6)s|2.98g|14.17
 1000|384|6.4|160%|156.25s|2.97g|15.12
+
+##### TPU FDPlast
+
+Parameter|Value
+---------|-----
+Max mass flow|TBD
+Linear Advance K-Factor|TBD
+Retraction|3.14mm
+Retraction Speed|30mm/s
+Flow|TBD
+Temperature|190
+Bed Temperature|80
 
 
 ## Marlin 2.1
